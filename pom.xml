@@ -46,22 +46,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.massivecore.factions</groupId>
-            <artifactId>factions</artifactId>
-            <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>D:/JARS/Mambafac.jar</systemPath>
-        </dependency>
-
-        <dependency>
-            <groupId>com.massivecore</groupId>
-            <artifactId>massivecore</artifactId>
-            <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>D:/JARS/MambaMassiveCore.jar</systemPath>
-        </dependency>
-
     </dependencies>
 
     <build>
