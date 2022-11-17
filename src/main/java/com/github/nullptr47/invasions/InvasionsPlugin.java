@@ -6,8 +6,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class InvasionsPlugin extends JavaPlugin {
 
-    @Override
+    public static InvasionsPlugin getInstance() {
+
+        return JavaPlugin.getPlugin(InvasionsPlugin.class);
+
+    }
+
     public void onEnable() {
+
+        saveDefaultConfig();
 
         Bukkit.getPluginManager().registerEvents(new EntityExplodeListener(), this);
 

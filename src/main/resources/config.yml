@@ -1,0 +1,5 @@
+messages:
+  invasion:
+    - ""
+    - "&eA facção &f[{factionAt}]&e foi invadida pela &f[{faction}]"
+    - ""
