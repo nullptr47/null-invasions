@@ -40,7 +40,7 @@ public class EntityExplodeListener implements Listener {
                 .filter(context -> !context.getFaction().getTag().equals(factionAt.getTag()))
                 .findFirst().orElse(null);
 
-        if (mplayer == null || System.currentTimeMillis() - lastBroadcastMillis.get(ps) < TimeUnit.MINUTES.toMillis(5))
+        if (mplayer == null || System.currentTimeMillis() - lastBroadcastMillis.getOrDefault(ps, System.currentTimeMillis()) < TimeUnit.MINUTES.toMillis(5))
             return;
 
         InvasionsPlugin.getInstance().getConfig()
