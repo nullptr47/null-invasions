@@ -48,7 +48,7 @@ public class EntityExplodeListener implements Listener {
                 .stream()
                 .map(string -> StringUtils.replaceEach(
                         string, new String[] { "&", "{factionAt}", "{faction}" },
-                        ArrayUtils.toArray(factionAt.getTag(), mplayer.getFaction().getTag()))
+                        ArrayUtils.toArray("§", factionAt.getTag(), mplayer.getFaction().getTag()))
                 )
                 .forEach(Bukkit::broadcastMessage);
 
